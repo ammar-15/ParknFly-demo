@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    flex-grow: 1;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+#carList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.car-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+}
+
+.car-card h3 {
+    margin-top: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    position: relative;
+}
+
+.closeBtn {
+    color: #aaa;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    color: black;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+}

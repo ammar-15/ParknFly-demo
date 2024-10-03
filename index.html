@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Park n Fly</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Park n Fly</h1>
+        <nav>
+            <button id="addNewCarBtn">Add New Car</button>
+        </nav>
+    </header>
+    <main>
+        <div id="carList">
+            <!-- All added cars will be displayed here -->
+        </div>
+    </main>
+
+    <!-- Popup Form -->
+    <div id="popupForm" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h2>Add New Car</h2>
+            <form id="carForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required>
+
+                <label for="vehicleModel">Vehicle Model:</label>
+                <input type="text" id="vehicleModel" required>
+
+                <label for="plateNumber">Plate Number:</label>
+                <input type="text" id="plateNumber" required>
+
+                <label for="departureDate">Date of Departure:</label>
+                <input type="date" id="departureDate" required>
+
+                <label for="arrivalDate">Date of Arrival:</label>
+                <input type="date" id="arrivalDate" required>
+
+                <label for="flightNumber">Flight Number:</label>
+                <input type="text" id="flightNumber" required>
+
+                <p>Total Amount: $<span id="totalAmount">0.00</span></p>
+
+                <button type="submit">Add Car</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js" async defer></script>
+</body>
+</html>
